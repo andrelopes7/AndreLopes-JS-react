@@ -1,0 +1,239 @@
+@use 'src/styles/vars';
+
+.content  {
+  width: 100%;
+  height: 100%;
+  margin-top: 6rem;
+  
+  &-allRecipe {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    &--card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &-error {
+    font-size: 1rem;
+  }
+  &-card {
+   
+    @media (min-width: 479px) {width: 50%;} 
+    @media (min-width: 768px) {width: 30%;}
+    @media (min-width: 1224px) {width: 25%;}
+    @media (min-width: 1824px) {width: 20%;}
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 3rem;
+    padding: 0 1.5rem ;
+    margin-bottom: 8rem;
+    
+   
+
+    &--card{
+      width: 100%;
+      height: 10rem;
+      border-radius: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &--title {
+      font-size: vars.$fontSize;
+      text-align: left;
+
+    }
+    &--difficulty {
+      font-size: vars.$fontSize;;
+     
+    }
+  }
+
+  &-bestRecipe {
+    @media (max-width: 768px) { flex-direction: column;}
+    width: 95%;
+    margin: auto ;
+    display: flex;
+    margin-bottom: 3rem;
+
+    &--title {
+      @media (max-width: 728px) {font-size: vars.$fontSize*1.25;}
+      width: 100%;
+      font-size: vars.$fontSize *2;
+      font-weight: bold;
+    }
+  }
+  
+  
+  &-bestNoteRecipe {
+    height: 40rem;
+    width: 50%;
+    border-left: 1px solid vars.$third;
+    
+    &--picture{
+      width: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 15rem;
+    }
+    &--title {
+      @media (max-width: 728px) {font-size: vars.$fontSize;}
+      font-size: vars.$fontSize *1.5;
+    }
+    &--flex {
+      padding: 2rem;
+      width: 100%;
+    }
+    &--descript  {
+      margin-top: 2rem;
+    }
+  }
+  
+  
+  &-SeasonRecipe{
+    
+    padding : 2rem;
+    border-bottom: 1px solid vars.$border;
+    &--picture {
+      width: 80%;
+      height:  10rem ;
+    }
+    &--title {
+      font-size: vars.$fontSize * 1.5;
+      font-weight: bolder;
+    }
+    &--flex {
+      width: 100%;
+     
+      border-right:vars.$border solid 1px;
+    }
+    &--picture{
+      width: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 12rem;
+    
+    }
+  }
+  
+  &-bestNoteRecipe, &-SeasonRecipe {
+    width: 100%;
+    padding-left: 1rem;
+    
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--card {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    &--title {
+      width: 50%;
+      border-radius: 0 30px 0 0;
+      background-color: vars.$second;
+      color: vars.$text;
+      @media (max-width: 728px) {font-size: vars.$fontSize ;}
+      font-size: vars.$fontSize * 1.25;
+    }
+    
+    &--detail {
+      width: 40%;
+      padding: 1rem 1rem 0 0 ;
+      background-color: vars.$second;
+      border-radius: 0 30px 30px 0;
+    }
+    &--p {
+      @media (max-width: 728px) {font-size: vars.$fontSize *0.75;}
+      font-size: vars.$fontSize;
+      color: vars.$text;
+      padding-left:1rem ;
+      
+    }
+    &--ptitle{
+      @media (max-width: 728px) {font-size: vars.$fontSize;}
+      font-size: vars.$fontSize * 1.25;
+      font-weight: bolder;
+      color: vars.$text;
+      padding-left:1rem ;
+    }
+  }
+
+  &-header {
+  width: 70%;
+  height: 28rem;
+  margin: vars.$margin 0 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  &-MoreFilter {
+    width: 20%;
+  }
+  &-buttonFilter {
+    
+    width: 3rem;
+    height: 25rem;
+    font-size: 2rem;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background-color: vars.$second;
+    opacity: 0.5;
+    border: transparent;
+    position: absolute;
+    
+  }
+
+
+  
+  &-title {
+    width: 95%;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+  }
+
+   &-numberCustomers {
+     font-size: 1rem;
+     font-weight: bolder;
+     position: relative; top : 20rem;
+     bottom :0;
+     &--input {
+      width: 3rem;
+      text-align: center;
+     }
+   }
+
+  
+  
+  &-recipe {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    
+    &-title {
+      font-size: 2rem;
+      font-weight: bolder;
+      color: white;
+      margin-bottom: 2rem;
+    }
+  }
+  
+} 
+.arrow {
+  font-size: 5rem;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+

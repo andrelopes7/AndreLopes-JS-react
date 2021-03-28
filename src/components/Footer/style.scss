@@ -1,0 +1,36 @@
+@use 'src/styles/vars';
+
+.footer {
+ 
+  width: 100%;
+  height: 14rem;
+  padding-top: 2rem;
+  border-top:solid 1px vars.$third ;
+  display: flex;
+
+    &--logo{
+      margin: 0 3rem;
+      width: 10%;
+      background-image: url('https://cdn.pixabay.com/photo/2021/02/06/21/01/chef-5989368_960_720.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &--title {
+      width: 80%;
+      text-align: center;
+      font-size: vars.$fontSize * 2;
+      font-style: oblique;
+    }
+    &--flex{
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+    }
+    &--others {
+      @media( max-width: 720px) {font-size: 1rem;  margin: auto;  flex-direction: column; }
+      padding-top: 2rem;
+      font-size: vars.$fontSize;
+      display: flex;
+      justify-content: space-evenly;
+    }
+}

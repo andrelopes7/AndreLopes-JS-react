@@ -1,0 +1,31 @@
+@use 'src/styles/vars';
+
+.userForm{
+  background-color: ivory;
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  padding: 2rem;
+  border: 2rem solid blue;
+  border-radius: 30px;
+  position: absolute; 
+  left: 25%;top: 25%;
+
+  &--descript {
+    font-weight: bold;
+    font-size: vars.$fontSize;
+    padding: 1rem 0;
+  }
+  &--input {
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  &--submit {
+    background-color: transparent;
+    border: none;
+    font-size: vars.$fontSize;
+    padding-top: 1rem;
+    font-style: oblique;
+  }
+ 
+}

@@ -1,0 +1,25 @@
+@use 'reset';
+@use 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body {
+  font-family:'Roboto, sans-serif';
+  height: 100%;
+  font-size: 16px;
+}
+
+ #root{
+   @media(min-width:720px){ font-family: 'Tangerine', cursive, sans-serif; }
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: vars.$fontSize;
+}
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }

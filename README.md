@@ -1,2 +1,1 @@
-# AndreLopes-JS-react
-bases ReactJs
+# project-ochef-frontend

@@ -1,0 +1,95 @@
+@use 'src/styles/vars';
+
+.detail {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+  margin-top: 4rem;
+  line-height: vars.$lignHeigth * 2;
+
+  &-recipe {
+    
+    &--flex {
+       @media (max-width : 768px) {flex-direction: column;}
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &--flexPicture {
+      @media (min-width : 768px) {width: 35%;  }
+      width: 95%;
+    }
+    &--title {
+      @media(min-width: 768px) { width: 35%; }
+      font-size: vars.$fontSize * 1.5;
+      padding: 0.5rem;
+      width: 95%;
+      background-color: vars.$second;
+      border-radius: 0 30px  0 0; 
+    }
+  } 
+  
+  &-picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    width: 100%;
+    }
+
+  &-instruction{
+    @media(max-width: 768px) { margin-top: 3rem;}
+    @media(min-width: 768px) { width: 50%; margin-left: 3rem;}
+    @media(min-width: 1224px) { width: 60%; }
+   
+    font-family: 'Lato', sans-serif;
+    width: 95%
+  }
+  &-ingredient{
+    width: 100%;
+    &--form {
+      position: absolute;
+      width: 33%;
+      height: 5rem;
+      bottom: 26rem;
+
+    }
+    &--input {
+      padding: 0.5rem ;
+      margin-left: 1rem;
+      width: 3rem;
+      background-color: transparent;
+    }
+    &--submit {
+      background-color: transparent;
+
+    }
+
+  }
+  &-instruction, &-ingredient {
+   
+    background-color: vars.$second;
+    padding: 1rem;
+
+    &--title {
+      font-size: 2rem;
+      color: vars.$text;
+      padding-bottom: 2rem;
+      font-size: vars.$fontSize * 2;
+    }
+    
+    &--text {
+      padding-left: 1rem;
+    }
+
+    &--detail {
+      padding-bottom: 1rem;
+      font-family: 'Lato', sans-serif;
+      font-size: vars.$fontSize / 2;
+    }
+    }
+    
+  &-ingredients {
+    width: 100%;
+    background-color: vars.$second;
+   
+  }
+}

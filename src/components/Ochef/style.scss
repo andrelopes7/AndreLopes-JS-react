@@ -1,0 +1,32 @@
+@use 'src/styles/vars';
+
+.ochef {
+  @media (max-width: 1281px) {
+    width: 100%;
+  }
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  background-color:vars.$third;
+
+
+  &-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &--load {
+      height: 20rem;
+      width: 100%;
+    }
+    &--loadText {
+      
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+
+}
+

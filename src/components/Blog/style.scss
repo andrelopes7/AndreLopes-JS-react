@@ -1,0 +1,24 @@
+@use 'src/styles/vars';
+
+.blog {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4rem;
+  
+  &--title {
+    text-align: center;
+    font-size: vars.$fontSize * 2;
+    padding: 1rem 0;
+  }
+  &--video {
+    padding-bottom: 4rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  &--article {
+    font-size: vars.$fontSize;
+    line-height: vars.$lignHeigth * 3;
+    font-family: 'Lato', sans-serif;
+  }
+}

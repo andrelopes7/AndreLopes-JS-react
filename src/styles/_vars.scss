@@ -1,0 +1,14 @@
+@use 'sass:color';
+@media ( max-width : 728px) {$fontSize : 6rem;}
+$principal: rgba(241, 241, 241, 0.486);
+$second: color.scale($principal,  $lightness: -10%);
+$third: color.scale($principal,  $lightness: 20%);
+$text: color.scale(black,  $lightness: 20%);
+$border:color.scale( rgb(255, 217, 0) , $lightness : -30%);
+$link : brown;
+$DegradeColor :rgb(129, 3, 3); 
+$degrade : ( $principal, );
+$fontSize : 2rem;
+$lignHeigth : 1rem;
+$margin: 2rem
+
